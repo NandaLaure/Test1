@@ -1,0 +1,33 @@
+ENTITIES, ATTRIBUTES AND RELATIONSHIPS
+
+COURSES
+-Id:PK INT UNIQUE
+-Details: Varchar(150)
+-Duration: Varchar(50)
+-Category: Varchar(150)
+-Student.Id: INT FOREIGN KEY
+-Instructor.Id: INT FOREIGN KEY
+
+STUDENTS
+-Id: PK INT UNIQUE
+-Name: Varchar(150)
+-Email: Varchar(100)
+-Contact: Varchar(50)
+-CourseHistory: Varchar(50)
+
+Instructor
+-Id: PK INT UNIQUE
+-Name: Varchar(150)
+-Email: Varchar(100)
+-Contact: Varchar(50)
+-CourseTaught: Varchar(50)
+
+ENROLLMENT
+-Id: PK INT UNIQUE
+-Date: Varchar(50)
+-Course.Id: INT FOREIGN KEY
+
+SCHEDULE
+-Id: PK INT UNIQUE
+-Details: Varchar(150)
+-Course.Id: INT FOREIGN KEY
